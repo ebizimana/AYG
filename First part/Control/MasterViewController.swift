@@ -32,7 +32,7 @@ class MasterViewController: UITableViewController {
         
     }
     
-    func insertNewObject(_ sender: Any) {
+    @objc func insertNewObject(_ sender: Any) {
         allNotes.insert(Note(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
